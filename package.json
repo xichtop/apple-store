@@ -29,6 +29,7 @@
     "@angular/compiler-cli": "^18.1.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/jasmine": "~5.1.0",
     "daisyui": "^4.12.10",
     "jasmine-core": "~5.1.0",
