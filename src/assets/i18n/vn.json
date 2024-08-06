@@ -1,0 +1,14 @@
+{
+  "header": {
+    "store": "Cửa Hàng",
+    "mac": "Mac",
+    "ipad": "iPad",
+    "iphone": "iPhone",
+    "watch": "Watch",
+    "airpod": "AirPods",
+    "tvAndHome": "TV & Nhà",
+    "entertainment": "Giải Trí",
+    "accessories": "Phụ Kiện",
+    "support": "Hổ Trợ"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "header": {
+    "store": "Store",
+    "mac": "Mac",
+    "ipad": "iPad",
+    "iphone": "iPhone",
+    "watch": "Watch",
+    "airpod": "AirPods",
+    "tvAndHome": "TV & Home",
+    "entertainment": "Entertainment",
+    "accessories": "Accessories",
+    "support": "Support"
+  }
+}
