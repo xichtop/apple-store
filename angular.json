@@ -53,8 +53,14 @@
                 "input": "public"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/tailwind.scss"
             ],
             "scripts": []
           },
@@ -120,5 +126,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
