@@ -1,0 +1,33 @@
+// The width/height of the icon element.
+$size: 24px !default;
+
+.svg-icon {
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: $size;
+  width: $size;
+  min-width: $size;
+  min-height: $size;
+
+  // In some cases the icon elements may extend beyond the container. Clip these cases
+  // in order to avoid weird overflows and click areas. See #11826.
+  overflow: hidden;
+
+  &.svg-icon-inline {
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
+    width: inherit;
+  }
+
+  &.svg-ligature-font[fontIcon]::before {
+    content: attr(fontIcon);
+  }
+}
+
+// Icons that will be mirrored in RTL.
+[dir='rtl'] .svg-icon-rtl-mirror {
+  transform: scale(-1, 1);
+}

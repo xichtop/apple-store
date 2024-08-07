@@ -5,12 +5,14 @@ import { routes } from './app.routes';
 import { provideTransloco } from '@jsverse/transloco';
 import { TranslocoHttpLoader } from './transloco-loader';
 import { provideHttpClient } from '@angular/common/http';
+import { provideIcons } from '@libs/svg-icon';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideHttpClient(),
+    provideIcons(),
     provideTransloco({
       config: {
         availableLangs: ['vn', 'en'],
