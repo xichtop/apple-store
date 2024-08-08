@@ -25,7 +25,7 @@
     ],
     "paths": {
       "@libs/*": ["projects/*"],
-      "@shared/*": ["src/app/shared/*"]
+      "@shared/*": ["src/app/shared/*"],
     }
   },
   "angularCompilerOptions": {

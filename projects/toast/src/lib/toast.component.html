@@ -1,0 +1,60 @@
+<div role="alert" class="relative px-4 py-3 border-none shadow-lg alert bg-base-100 min-w-60 w-fit">
+  <div class="flex items-start gap-4 mr-6">
+    <!-- Icon -->
+    <ng-container [ngSwitch]="data.type">
+      <ng-container *ngSwitchCase="'info'">
+        <span class="text-info">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current w-7 h-7 shrink-0">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'success'">
+        <span class="text-success">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current w-7 h-7 shrink-0" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'warning'">
+        <span class="text-warning">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current w-7 h-7 shrink-0" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+        </span>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'error'">
+        <span class="text-error">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current w-7 h-7 shrink-0" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+      </ng-container>
+    </ng-container>
+
+    <!-- Message -->
+    <div class="flex-1">
+      <strong class="block font-medium" [innerHTML]="data.title"></strong>
+      <p class="mt-1 text-sm" [innerHTML]="data.message"></p>
+    </div>
+
+    <!-- Dismiss -->
+    <button
+      (click)="dismiss()"
+      class="absolute transition btn btn-circle btn-ghost btn-sm top-1 right-1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-5 h-5 text-hint"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+</div>

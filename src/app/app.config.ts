@@ -6,13 +6,17 @@ import { provideTransloco } from '@jsverse/transloco';
 import { TranslocoHttpLoader } from './transloco-loader';
 import { provideHttpClient } from '@angular/common/http';
 import { provideIcons } from '@libs/svg-icon';
+import { provideToast } from '@libs/toast';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
+    provideAnimations(),
     provideRouter(routes),
     provideHttpClient(),
     provideIcons(),
+    provideToast(),
     provideTransloco({
       config: {
         availableLangs: ['vn', 'en'],
