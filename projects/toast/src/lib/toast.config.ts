@@ -26,7 +26,7 @@ export class ToastConfig<D = any> {
   data?: D | null = null;
 
   /** The horizontal position to place the toast. */
-  horizontalPosition?: ToastHorizontalPosition = 'right';
+  horizontalPosition?: ToastHorizontalPosition = 'center';
 
   /** The vertical position to place the toast. */
   verticalPosition?: ToastVerticalPosition = 'top';
