@@ -20,8 +20,5 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    setTimeout(() => {
-      this._notification.info('Welcome to Apple Store');
-    }, 3000);
   }
 }

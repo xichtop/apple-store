@@ -18,11 +18,6 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._notification.success('Welcome to Apple Store header!');
-
-    setTimeout(() => {
-      this._notification.info('Welcome to Apple Store');
-    }, 6000);
   }
 
 }
