@@ -10,5 +10,12 @@
     "entertainment": "Entertainment",
     "accessories": "Accessories",
     "support": "Support"
+  },
+  "common": {
+
+  },
+  "banner": {
+    "title": "Buy a Mac or iPad with education discounts. Now through September 30, get AirPods with any Mac purchase and Apple Pencil with any iPad purchase.",
+    "button": "Find more"
   }
 }

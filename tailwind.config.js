@@ -1,5 +1,44 @@
 const plugin = require('tailwindcss/plugin');
 
+// Generate at: https://uicolors.app
+const theme = {
+  'primary': {
+    '50': '#fff0f1',
+    '100': '#ffdee1',
+    '200': '#ffc3c8',
+    '300': '#ff99a1',
+    '400': '#ff5f6c',
+    '500': '#ff2d3e',
+    '600': '#f50d20',
+    '700': '#d70718',
+    '800': '#aa0a17',
+    '900': '#8c101a',
+    'DEFAULT': '#d70718',
+  },
+  'on-primary': {
+    '500': '#ffffff',
+    'DEFAULT': '#ffffff',
+  },
+  'secondary': {
+    '50': '#edfaff',
+    '100': '#d6f2ff',
+    '200': '#b5eaff',
+    '300': '#83e0ff',
+    '400': '#48ccff',
+    '500': '#1eadff',
+    '600': '#068fff',
+    '700': '#007bfe',
+    '800': '#085ec5',
+    '900': '#0d529b',
+    'DEFAULT': '#007bfe',
+  },
+  'on-secondary': {
+    '500': '#ffffff',
+    'DEFAULT': '#ffffff',
+  },
+};
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
@@ -139,9 +178,40 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: [ 'bumblebee', 'halloween']
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+          'primary': theme['primary']['DEFAULT'],
+          'primary-content': theme['on-primary']['DEFAULT'],
+          'secondary': theme['secondary']['DEFAULT'],
+          'secondary-content': theme['on-secondary']['DEFAULT'],
+          'accent': '#FFBC42',
+          'accent-content': '#FFFFFF',
+          'neutral': '#D1D5DB',
+          'neutral-content': '#FFFFFF',
+          'info-content': '#FFFFFF',
+          'warning-content': '#FFFFFF',
+          'base-100': '#FFFFFF',
+        },
+        dark: {
+          ...require('daisyui/src/theming/themes')['dark'],
+          'primary': theme['primary']['DEFAULT'],
+          'primary-content': theme['on-primary']['DEFAULT'],
+          'secondary': theme['secondary']['DEFAULT'],
+          'secondary-content': theme['on-secondary']['DEFAULT'],
+          'accent': '#FFBC42',
+          'accent-content': '#FFFFFF',
+          'neutral': '#D1D5DB',
+          'neutral-content': '#FFFFFF',
+          'info-content': '#FFFFFF',
+          'warning-content': '#FFFFFF',
+          'base-100': '#111827',
+        },
+      }
+    ]
   },
-  darkMode: ['class', '[data-theme="halloween"]'],
+  darkMode: ['class', '[data-theme="  "]'],
   plugins: [
     require('@tailwindcss/typography'),
     require('daisyui'),
@@ -186,7 +256,35 @@ module.exports = {
           },
         },
       }
-    )
+    ),
+    plugin(({addComponents}) => {
+      addComponents({
+        '.bg-card': {
+          '--tw-bg-opacity': '1',
+          backgroundColor: 'rgba(var(--bg-card-rgb), var(--tw-bg-opacity))'
+        },
+        '.bg-default': {
+          '--tw-bg-opacity': '1',
+          backgroundColor: 'rgba(var(--bg-default-rgb), var(--tw-bg-opacity))'
+        },
+        '.shadow-card': {
+          '--tw-shadow': 'rgba(var(--shadow-card-rgb), 0.2) 0px 8px 24px',
+          boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);'
+        },
+        '.text-default': {
+          '--tw-text-opacity': '1',
+          color: 'rgba(var(--text-default-rgb), var(--tw-text-opacity))'
+        },
+        '.text-hint': {
+          '--tw-text-opacity': '1',
+          color: 'rgba(var(--text-hint-rgb), var(--tw-text-opacity))'
+        },
+        '.text-disabled': {
+          '--tw-text-opacity': '1',
+          color: 'rgba(var(--text-disabled-rgb), var(--tw-text-opacity))'
+        },
+      });
+    })
   ],
 }
 

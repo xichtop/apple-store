@@ -1,28 +1,34 @@
-<div class="flex items-center justify-center w-screen bg-neutral-100">
+<div class="sticky top-0 flex items-center justify-center w-screen bg-card">
   <div class="flex items-center justify-between h-8 max-w-screen-lg gap-8">
     <svg-icon svgIcon="custome_solid:apple" class="cursor-pointer icon-size-4"></svg-icon>
 
-    <p class="text-xs cursor-pointer">{{'header.store' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.mac' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.ipad' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.iphone' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.watch' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.airpod' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.tvAndHome' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.entertainment' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.accessories' | transloco }}</p>
-    <p class="text-xs cursor-pointer">{{'header.support' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.store' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.mac' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.ipad' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.iphone' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.watch' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.airpod' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.tvAndHome' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.entertainment' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.accessories' | transloco }}</p>
+    <p class="text-xs cursor-pointer text-default">{{'header.support' | transloco }}</p>
 
     <svg-icon svgIcon="heroicons_outline:magnifying-glass" class="font-bold cursor-pointer icon-size-4"></svg-icon>
     <svg-icon svgIcon="heroicons_outline:shopping-bag" class="font-bold cursor-pointer icon-size-4"></svg-icon>
 
+    <label class="swap">
+      <input type="checkbox" [formControl]="langControl" />
+      <div class="text-xs swap-on">EN</div>
+      <div class="text-xs swap-off">VN</div>
+    </label>
+
     <label class="swap swap-rotate">
       <!-- this hidden checkbox controls the state -->
-      <input type="checkbox" class="theme-controller" value="halloween" />
+      <input type="checkbox" class="theme-controller" value="light" />
 
       <!-- sun icon -->
       <svg
-        class="w-4 h-4 fill-current swap-on"
+        class="w-4 h-4 fill-current swap-off"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24">
         <path
@@ -31,7 +37,7 @@
 
       <!-- moon icon -->
       <svg
-        class="w-4 h-4 fill-current swap-off"
+        class="w-4 h-4 fill-current swap-on"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24">
         <path

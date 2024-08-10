@@ -10,5 +10,13 @@
     "entertainment": "Giải Trí",
     "accessories": "Phụ Kiện",
     "support": "Hổ Trợ"
+  },
+
+  "common": {
+
+  },
+  "banner": {
+    "title": "Mua Mac hoặc iPad với chính sách trợ giá cho giáo dục. Từ nay tới 30/9, nhận thêm AirPods khi mua Mac và Apple Pencil khi mua iPad.",
+    "button": "Tìm hiểu thêm"
   }
 }

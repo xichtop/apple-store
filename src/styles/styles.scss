@@ -1,0 +1,58 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Color theme
+/* ----------------------------------------------------------------------------------------------------- */
+html[data-theme="light"] {
+  --bg-card: #6d757c;
+  --bg-card-rgb: 109, 117, 124;
+  --bg-default: #ffffff;
+  --bg-default-rgb: 241, 245, 249;
+  --text-default: #000000;
+  --text-default-rgb: 30, 41, 59;
+  --text-hint: #94a3b8;
+  --text-hint-rgb: 148, 163, 184;
+  --text-disabled: #94a3b8;
+  --text-disabled-rgb: 148, 163, 184;
+  --border: #e2e8f0;
+  --border-rgb: 226, 232, 240;
+  --divider: #e2e8f0;
+  --divider-rgb: 226, 232, 240;
+  --icon: #64748b;
+  --icon-rgb: 100, 116, 139;
+  --shadow-card: #959da5;
+  --shadow-card-rgb: 149, 157, 165;
+  --scrollbar-thumb: #c7c7c7;
+  --scrollbar-thumb-hover: #7c7c7c;
+}
+
+html[data-theme="dark"] {
+  --bg-card: #273a4b;
+  --bg-card-rgb: 39, 58, 75;
+  --bg-default: #000000;
+  --bg-default-rgb: 17, 24, 39;
+  --text-default: #ffffff;
+  --text-default-rgb: 255, 255, 255;
+  --text-hint: #64748b;
+  --text-hint-rgb: 100, 116, 139;
+  --text-disabled: #475569;
+  --text-disabled-rgb: 71, 85, 105;
+  --border: rgba(241, 245, 249, 0.12);
+  --border-rgb: 241, 245, 249;
+  --divider: rgba(241, 245, 249, 0.12);
+  --divider-rgb: 241, 245, 249;
+  --icon: #94a3b8;
+  --icon-rgb: 148, 163, 184;
+  --shadow-card: #393939;
+  --shadow-card-rgb: 57, 57, 57;
+  --scrollbar-thumb: #6b6b6b;
+  --scrollbar-thumb-hover: #888888;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ App styles
+/* ----------------------------------------------------------------------------------------------------- */
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+}
