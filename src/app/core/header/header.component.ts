@@ -14,21 +14,22 @@ import { SvgIcon } from '@libs/svg-icon';
 export class HeaderComponent implements OnInit {
 
   langControl = new FormControl(true);
+  themeControl = new FormControl(true);
+
   constructor(
     private _translocoService: TranslocoService
   ) { }
 
   ngOnInit(): void {
-    console.log(this._translocoService.getActiveLang());
     this.langControl.setValue(this._translocoService.getActiveLang() === 'vn', { emitEvent: false });
 
     this.langControl.valueChanges.subscribe((lang) => {
-      if (lang) {
-        this._translocoService.setActiveLang('vn');
-        return;
-      }
+      this._translocoService.setActiveLang(lang ? 'vn' : 'en');
+    });
 
-      this._translocoService.setActiveLang('en');
+
+    this.themeControl.valueChanges.subscribe((theme) => {
+      document.firstElementChild?.setAttribute('data-theme', theme ? 'light' : 'dark');
     });
 
   }
