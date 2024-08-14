@@ -2,10 +2,10 @@
 /*  @ Color theme
 /* ----------------------------------------------------------------------------------------------------- */
 html[data-theme="light"] {
-  --bg-card: #6d757c;
-  --bg-card-rgb: 109, 117, 124;
+  --bg-card: #f5f5f7;
+  --bg-card-rgb: 245, 245, 247;
   --bg-default: #ffffff;
-  --bg-default-rgb: 241, 245, 249;
+  --bg-default-rgb: 255, 255, 255;
   --text-default: #000000;
   --text-default-rgb: 30, 41, 59;
   --text-hint: #94a3b8;
@@ -25,10 +25,10 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-  --bg-card: #273a4b;
-  --bg-card-rgb: 39, 58, 75;
+  --bg-card: #434343;
+  --bg-card-rgb: 67, 67, 67;
   --bg-default: #000000;
-  --bg-default-rgb: 17, 24, 39;
+  --bg-default-rgb: 0, 0, 0;
   --text-default: #ffffff;
   --text-default-rgb: 255, 255, 255;
   --text-hint: #64748b;
@@ -55,4 +55,26 @@ app-root {
   flex-direction: column;
   flex: 1 1 auto;
   width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
