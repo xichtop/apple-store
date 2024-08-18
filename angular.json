@@ -57,6 +57,7 @@
               ]
             },
             "styles": [
+              "src/styles/fonts.scss",
               "src/styles/vendors.scss",
               "src/styles/styles.scss",
               "src/styles/tailwind.scss"

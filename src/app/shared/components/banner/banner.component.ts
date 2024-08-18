@@ -8,7 +8,8 @@ import { SvgIcon } from "@libs/svg-icon";
   templateUrl: "./banner.component.html",
   imports: [
     SvgIcon, TranslocoPipe
-  ]
+  ],
+  host: { class: "w-full" }
 })
 export class BannerComponent {
 }

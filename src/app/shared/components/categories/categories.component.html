@@ -1,0 +1,8 @@
+<div class="grid w-full grid-cols-8 gap-4 my-4">
+  @for (category of CATEGORIES; track $index) {
+    <div class="flex flex-col items-center justify-between cursor-pointer group">
+      <img [src]="category.image" alt="category image" class="object-contain w-28 h-28">
+      <p class="text-sm font-bold group-hover:underline">{{'header.' + category.id | transloco }}</p>
+    </div>
+  }
+</div>
