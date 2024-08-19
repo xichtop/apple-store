@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './promotion.component.html',
 })
 
-export class PromotionComponent { }
+export class PromotionComponent {
+  promotion = input('');
+  title = input('');
+  description = input('');
+  imgURL = input('');
+}
