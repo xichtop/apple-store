@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import { AdvertiseComponent } from "@shared/components/advertise/advertise.component";
 import { BannerComponent } from "@shared/components/banner/banner.component";
 import { CategoriesComponent } from "../../shared/components/categories/categories.component";
+import { PromotionComponent } from "@shared/components/promotion/promotion.component";
 
 @Component({
   standalone: true,
@@ -10,7 +11,7 @@ import { CategoriesComponent } from "../../shared/components/categories/categori
   templateUrl: "./store.component.html",
   imports: [
     BannerComponent, AdvertiseComponent,
-    CategoriesComponent
+    CategoriesComponent, PromotionComponent
   ],
   host: { class: "w-full" }
 })
