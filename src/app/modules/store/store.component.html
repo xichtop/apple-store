@@ -12,40 +12,58 @@
   </div>
 
   <div class="flex items-center max-w-screen-xl gap-6">
-    <app-promotion
-      [promotion]="'Ưu đãi trong thời gian có hạn'"
-      [title]="'Nhận thêm Airpods khi mua Mac và Apple Pencil khi mua iPad.'"
-      [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-offer-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717526810649'"
+    <swiper-container
+      slides-per-view="3"
+      navigation="true"
+      [effect]="'coverflow'"
+      slidesOffsetAfter="200"
+      class="w-full"
     >
-    </app-promotion>
-    <app-promotion
-      [promotion]="'Nhận thêm airpods'"
-      [title]="'MacBook Air'"
-      [description]="'Từ 22.499.000đ với chính sách trợ giá cho giáo dục'"
-      [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-macbook-air-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1717542579551'"
-    >
-    </app-promotion>
-    <app-promotion
-      [promotion]="'Nhận thêm Apple pencil'"
-      [title]="'iPad Pro'"
-      [description]="'Từ 15.599.000đ với chính sách trợ giá cho giáo dục'"
-      [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
-    >
-    </app-promotion>
-    <app-promotion
-      [promotion]="'Nhận thêm Airpods'"
-      [title]="'iMac'"
-      [description]="'Từ 35.599.000đ với chính sách trợ giá cho giáo dục'"
-      [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
-    >
-    </app-promotion>
-    <app-promotion
-      [promotion]="'Nhận thêm Airpods'"
-      [title]="'Mac mini'"
-      [description]="'Từ 12.499.000đ với chính sách trợ giá cho giáo dục'"
-      [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
-    >
-    </app-promotion>
+      <swiper-slide>
+        <app-promotion
+          [promotion]="'Ưu đãi trong thời gian có hạn'"
+          [title]="'Nhận thêm Airpods khi mua Mac và Apple Pencil khi mua iPad.'"
+          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-offer-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717526810649'"
+        >
+        </app-promotion>
+      </swiper-slide>
+      <swiper-slide>
+        <app-promotion
+          [promotion]="'Nhận thêm airpods'"
+          [title]="'MacBook Air'"
+          [description]="'Từ 22.499.000đ với chính sách trợ giá cho giáo dục'"
+          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-macbook-air-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1717542579551'"
+        >
+        </app-promotion>
+      </swiper-slide>
+      <swiper-slide>
+        <app-promotion
+          [promotion]="'Nhận thêm Apple pencil'"
+          [title]="'iPad Pro'"
+          [description]="'Từ 15.599.000đ với chính sách trợ giá cho giáo dục'"
+          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
+        >
+        </app-promotion>
+      </swiper-slide>
+      <swiper-slide>
+        <app-promotion
+          [promotion]="'Nhận thêm Airpods'"
+          [title]="'iMac'"
+          [description]="'Từ 35.599.000đ với chính sách trợ giá cho giáo dục'"
+          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
+        >
+        </app-promotion>
+      </swiper-slide>
+      <swiper-slide>
+        <app-promotion
+          [promotion]="'Nhận thêm Airpods'"
+          [title]="'Mac mini'"
+          [description]="'Từ 12.499.000đ với chính sách trợ giá cho giáo dục'"
+          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
+        >
+        </app-promotion>
+      </swiper-slide>
+    </swiper-container>
   </div>
 
   <div class="flex items-start w-full max-w-screen-xl mt-6">
