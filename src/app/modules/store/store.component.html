@@ -13,9 +13,9 @@
     </div>
 
     <div class="relative w-full">
-      <div
-        class="flex items-center w-full gap-6 overflow-x-scroll overflow-y-hidden transition-all hide-scrollbar"
-        [ngClass]="'translate-x-' + translateXByPx()"
+      <!--  <div
+        class="flex items-center w-screen gap-6 overflow-x-scroll overflow-y-hidden hide-scrollbar"
+        id="swiperContainer"
       >
         <app-promotion
         [promotion]="'Ưu đãi trong thời gian có hạn'"
@@ -41,9 +41,15 @@
         [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-offer-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717526810649'"
       >
       </app-promotion>
+      <app-promotion
+        [promotion]="'Ưu đãi trong thời gian có hạn'"
+        [title]="'Nhận thêm Airpods khi mua Mac và Apple Pencil khi mua iPad.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-offer-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717526810649'"
+      >
+      </app-promotion>
       </div>
 
-      <div class="absolute top-0 left-0 flex items-center justify-center h-full">
+      <div class="top-0 left-0 flex items-center justify-center h-full">
         <button
           class="border-none btn btn-circle"
           (click)="scrollLeft()"
@@ -52,16 +58,16 @@
         </button>
       </div>
 
-      <div class="absolute top-0 right-0 flex items-center justify-center h-full">
+      <div class="top-0 right-0 flex items-center justify-center h-full">
         <button
           class="border-none btn btn-circle"
           (click)="scrollRight()"
         >
           <svg-icon svgIcon="heroicons_outline:chevron-right" class="font-bold icon-size-8"></svg-icon>
         </button>
-      </div>
+      </div> -->
 
-      <!-- <swiper-container
+      <swiper-container
         slides-per-view="3"
         navigation="true"
         slidesOffsetAfter="200"
@@ -111,7 +117,7 @@
           >
           </app-promotion>
         </swiper-slide>
-      </swiper-container> -->
+      </swiper-container>
     </div>
 
     <div class="flex items-start w-full max-w-screen-xl mt-6">
