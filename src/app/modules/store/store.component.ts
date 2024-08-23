@@ -1,5 +1,5 @@
 import { C } from "@angular/cdk/keycodes";
-import { Component, computed, CUSTOM_ELEMENTS_SCHEMA, signal } from "@angular/core";
+import { AfterViewInit, Component, computed, CUSTOM_ELEMENTS_SCHEMA, OnInit, signal } from "@angular/core";
 import { AdvertiseComponent } from "@shared/components/advertise/advertise.component";
 import { BannerComponent } from "@shared/components/banner/banner.component";
 import { CategoriesComponent } from "../../shared/components/categories/categories.component";
@@ -22,16 +22,36 @@ import { CommonModule } from "@angular/common";
     CUSTOM_ELEMENTS_SCHEMA
   ],
 })
-export class StoreComponent {
+export class StoreComponent implements OnInit, AfterViewInit {
 
   translateX = signal(0);
   translateXByPx = computed(() => '[' + this.translateX() + 'rem]');
 
+  ngOnInit(): void {
+
+  }
+
+  ngAfterViewInit(): void {
+    document.getElementById('swiperContainer')?.scrollBy({
+      top: 0,
+      left: -200,
+      behavior: 'smooth'
+    });
+  }
+
   scrollLeft() {
-    this.translateX.update(x => x - 4);
+    document.getElementById('swiperContainer')?.scrollBy({
+      top: 0,
+      left: 200,
+      behavior: 'smooth'
+    });
   }
 
   scrollRight() {
-    this.translateX.update(x => x + 4);
+    document.getElementById('swiperContainer')?.scrollTo({
+      top: 0,
+      left: 1000,
+      behavior: 'smooth'
+    });
   }
 }
