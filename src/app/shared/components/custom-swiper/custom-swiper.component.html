@@ -1,0 +1,25 @@
+<div class="relative w-full">
+
+  <ng-content></ng-content>
+
+  <div
+    *ngIf="scrollX() !== 0"
+    class="absolute top-0 flex items-center justify-center h-full left-10"
+  >
+    <button
+      class="border-none btn btn-circle hover:bg-default"
+      (click)="scrollLeft()"
+    >
+      <svg-icon svgIcon="heroicons_outline:chevron-left" class="font-bold icon-size-8"></svg-icon>
+    </button>
+  </div>
+
+  <div class="absolute top-0 flex items-center justify-center h-full right-10">
+    <button
+      class="border-none btn btn-circle hover:bg-default"
+      (click)="scrollRight()"
+    >
+      <svg-icon svgIcon="heroicons_outline:chevron-right" class="font-bold icon-size-8"></svg-icon>
+    </button>
+  </div>
+</div>
