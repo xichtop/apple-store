@@ -115,23 +115,6 @@
     </div>
   </div>
 
-  <div class="flex items-center max-w-screen-xl gap-6 px-28">
-    <swiper-container slides-per-view="3" navigation="true" class="w-full">
-      <swiper-slide>
-
-      </swiper-slide>
-      <swiper-slide>
-
-      </swiper-slide>
-      <swiper-slide>
-
-      </swiper-slide>
-      <swiper-slide>
-
-      </swiper-slide>
-    </swiper-container>
-  </div>
-
   <app-custom-swiper [swiperID]="'studentPromotion'">
     <div
       class="flex items-center w-screen gap-4 overflow-x-scroll hide-scrollbar"
@@ -143,25 +126,59 @@
         [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
       >
       </app-promotion>
-      <app-promotion
-        [title]="'Những thứ sinh viên nhất định phải có'"
-        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+      <app-small-product
+        [isEdu]="true"
+        [promotion]="'Mới'"
+        [title]="'Apple Pencil Pro'"
+        [description]="'3.199.000đ với chính sách trợ giá cho giáo dục.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX2D3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713841707336'"
       >
-      </app-promotion>
-      <app-promotion
-        [title]="'Những thứ sinh viên nhất định phải có'"
-        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+      </app-small-product>
+      <app-small-product
+        [isEdu]="true"
+        [promotion]="'Mới'"
+        [title]="'Magic Keyboard cho iPad Pro 13 inch (M4) - Tiếng Anh Mỹ'"
+        [description]="'9.199.000đ với chính sách trợ giá cho giáo dục.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MWR53?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713934300288'"
+        [colors]="['gray', 'black']"
       >
-      </app-promotion>
-      <app-promotion
+      </app-small-product>
+      <app-small-product
+        [isEdu]="true"
+        [promotion]="'Mới'"
+        [title]="'Magic Keyboard Folio cho iPad (Thế hệ thứ 10) - Tiếng Anh Mỹ'"
+        [description]="'3.199.000đ với chính sách trợ giá cho giáo dục.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQDP3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1664481446939'"
+      >
+      </app-small-product>
+      <app-small-product
+        [isEdu]="true"
+        [title]="'Apple Pencil (USB-C)'"
+        [description]="'1.899.000đ với chính sách trợ giá cho giáo dục.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX2D3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713841707336'"
+      >
+      </app-small-product>
+      <app-small-product
+        [promotion]="'Khắc Miễn Phí'"
+        [title]="'Airpods Pro (Thế hệ thứ 2) với Hộp Sạc Magsage (USB-C)'"
+        [description]="'6.199.000đ.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MTJV3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1694014871985'"
+      >
+      </app-small-product>
+      <app-small-product
+        [title]="'Cáp Sạc USB-C 240W (2 m)'"
+        [description]="'819.000đ.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MU2G3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1693236163178'"
+      >
+      </app-small-product>
+      <app-small-product
         class="pr-56"
-        [title]="'Những thứ sinh viên nhất định phải có'"
-        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+        [title]="'Beats Studio Buds + Tai nghe không dây đích thực khử tiếng ồn'"
+        [description]="'3.999.000đ.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQLK3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1682361480894'"
+        [colors]="['gray', 'black']"
       >
-      </app-promotion>
+      </app-small-product>
     </div>
   </app-custom-swiper>
 

@@ -7,6 +7,7 @@ import { PromotionComponent } from "@shared/components/promotion/promotion.compo
 import { SvgIcon } from "@libs/svg-icon";
 import { CommonModule } from "@angular/common";
 import { CustomSwiperComponent } from "@shared/components/custom-swiper/custom-swiper.component";
+import { SmallProductComponent } from "@shared/components/small-product/small-product.component";
 
 @Component({
   standalone: true,
@@ -16,7 +17,8 @@ import { CustomSwiperComponent } from "@shared/components/custom-swiper/custom-s
   imports: [
     BannerComponent, AdvertiseComponent,
     CategoriesComponent, PromotionComponent,
-    SvgIcon, CommonModule, CustomSwiperComponent
+    SvgIcon, CommonModule, CustomSwiperComponent,
+    SmallProductComponent
   ],
   host: { class: "w-full" },
   schemas: [
