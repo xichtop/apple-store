@@ -11,7 +11,7 @@ export class IconsService {
     // Register icon sets
     svgIconRegistry.addSvgIconSetInNamespace('heroicons_outline', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/heroicons-outline.svg'));
     svgIconRegistry.addSvgIconSetInNamespace('heroicons_solid', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/heroicons-solid.svg'));
-    svgIconRegistry.addSvgIconSetInNamespace('custome_outline', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/custome-outline.svg'));
-    svgIconRegistry.addSvgIconSetInNamespace('custome_solid', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/custome-solid.svg'));
+    svgIconRegistry.addSvgIconSetInNamespace('custom_outline', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/custom-outline.svg'));
+    svgIconRegistry.addSvgIconSetInNamespace('custom_solid', domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/custom-solid.svg'));
   }
 }

@@ -5,12 +5,6 @@
 
   <app-categories class="w-full px-28"></app-categories>
 
-  <!-- <div class="flex flex-col items-start w-full gap-4 px-28">
-
-
-    <div class="h-60"></div>
-  </div> -->
-
   <div class="relative flex items-start w-full px-28">
     <div class="w-3/5">
       <p class="text-2xl font-bold">Công cụ tiên tiến cho những môn học nâng cao. <span class="text-2xl font-bold text-hint">Chọn dòng sản phẩm hàng đầu.</span></p>
@@ -29,6 +23,7 @@
       >
       </app-promotion>
       <app-promotion
+        [isEdu]="true"
         [promotion]="'NHẬN THÊM AIRPODS'"
         [title]="'MacBook Air'"
         [description]="'Từ 22.499.000đ với chính sách trợ giá cho giáo dục'"
@@ -36,6 +31,7 @@
       >
       </app-promotion>
       <app-promotion
+        [isEdu]="true"
         [promotion]="'NHẬN THÊM APPLE PENCIL'"
         [title]="'Ipad Air'"
         [description]="'Từ 15.599.000đ với chính sách trợ giá cho giáo dục'"
@@ -43,6 +39,7 @@
       >
       </app-promotion>
       <app-promotion
+        [isEdu]="true"
         [promotion]="'NHẬN THÊM AIRPODS'"
         [title]="'MacBook Pro'"
         [description]="'Từ 37.499.000đ với chính sách trợ giá cho giáo dục'"
@@ -50,6 +47,7 @@
       >
       </app-promotion>
       <app-promotion
+        [isEdu]="true"
         [promotion]="'NHẬN THÊM APPLE PENCIL'"
         [title]="'Ipad Pro'"
         [description]="'Từ 26.099.000đ với chính sách trợ giá cho giáo dục'"
@@ -57,6 +55,7 @@
       >
       </app-promotion>
       <app-promotion
+        [isEdu]="true"
         [promotion]="'NHẬN THÊM AIRPODS'"
         [title]="'iMac'"
         [description]="'Từ 35.599.000đ'"
@@ -65,6 +64,7 @@
       </app-promotion>
       <app-promotion
         class="pr-56"
+        [isEdu]="true"
         [promotion]="'NHẬN THÊM AIRPODS'"
         [title]="'Mac mini'"
         [description]="'Từ 12.499.000đ'"
@@ -118,50 +118,51 @@
   <div class="flex items-center max-w-screen-xl gap-6 px-28">
     <swiper-container slides-per-view="3" navigation="true" class="w-full">
       <swiper-slide>
-        <app-promotion
-          [title]="'Những thứ sinh viên nhất định phải có'"
-          [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
-        >
-        </app-promotion>
+
       </swiper-slide>
       <swiper-slide>
-        <app-promotion
-          [title]="'Những thứ sinh viên nhất định phải có'"
-          [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
-        >
-        </app-promotion>
+
       </swiper-slide>
       <swiper-slide>
-        <app-promotion
-          [title]="'Những thứ sinh viên nhất định phải có'"
-          [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
-        >
-        </app-promotion>
+
       </swiper-slide>
       <swiper-slide>
-        <app-promotion
-          [title]="'Những thứ sinh viên nhất định phải có'"
-          [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
-          [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
-        >
-        </app-promotion>
+
       </swiper-slide>
-      <!-- <swiper-slide>
-        123
-      </swiper-slide>
-      <swiper-slide>
-        123
-      </swiper-slide>
-      <swiper-slide>
-        123
-      </swiper-slide>
-      <swiper-slide>
-        123
-      </swiper-slide> -->
     </swiper-container>
   </div>
+
+  <app-custom-swiper [swiperID]="'studentPromotion'">
+    <div
+      class="flex items-center w-screen gap-4 overflow-x-scroll hide-scrollbar"
+      id="studentPromotion"
+    >
+      <app-promotion
+        [title]="'Những thứ sinh viên nhất định phải có'"
+        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+      >
+      </app-promotion>
+      <app-promotion
+        [title]="'Những thứ sinh viên nhất định phải có'"
+        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+      >
+      </app-promotion>
+      <app-promotion
+        [title]="'Những thứ sinh viên nhất định phải có'"
+        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+      >
+      </app-promotion>
+      <app-promotion
+        class="pr-56"
+        [title]="'Những thứ sinh viên nhất định phải có'"
+        [description]="'Sắm những gì bạn cần để khởi đầu thật thông minh.'"
+        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
+      >
+      </app-promotion>
+    </div>
+  </app-custom-swiper>
 
 </div>

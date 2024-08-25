@@ -1,9 +1,12 @@
 import { Component, input } from '@angular/core';
+import { SvgIconModule } from "../../../../../projects/svg-icon/src/lib/icon-module";
+import { SvgIcon } from "../../../../../projects/svg-icon/src/lib/icon";
 
 @Component({
   standalone: true,
   selector: 'app-promotion',
   templateUrl: './promotion.component.html',
+  imports: [SvgIcon],
 })
 
 export class PromotionComponent {
@@ -11,4 +14,5 @@ export class PromotionComponent {
   title = input('');
   description = input('');
   imgURL = input('');
+  isEdu = input(false);
 }
