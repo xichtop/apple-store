@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './core/header/header.component';
 import { register } from 'swiper/element/bundle';
+import { FooterComponent } from './core/footer/footer.component';
 register();
 
 @Component({
@@ -10,7 +11,7 @@ register();
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   imports: [
-    RouterOutlet, HeaderComponent
+    RouterModule, HeaderComponent, FooterComponent
   ],
 })
 export class AppComponent implements OnInit {
