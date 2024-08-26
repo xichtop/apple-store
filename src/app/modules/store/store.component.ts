@@ -8,6 +8,7 @@ import { SvgIcon } from "@libs/svg-icon";
 import { CommonModule } from "@angular/common";
 import { CustomSwiperComponent } from "@shared/components/custom-swiper/custom-swiper.component";
 import { SmallProductComponent } from "@shared/components/small-product/small-product.component";
+import { BigPromotionComponent } from "@shared/components/big-promotion/big-promotion.component";
 
 @Component({
   standalone: true,
@@ -18,7 +19,7 @@ import { SmallProductComponent } from "@shared/components/small-product/small-pr
     BannerComponent, AdvertiseComponent,
     CategoriesComponent, PromotionComponent,
     SvgIcon, CommonModule, CustomSwiperComponent,
-    SmallProductComponent
+    SmallProductComponent, BigPromotionComponent
   ],
   host: { class: "w-full" },
   schemas: [
