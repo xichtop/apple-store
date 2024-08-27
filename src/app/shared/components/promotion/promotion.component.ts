@@ -1,5 +1,4 @@
 import { Component, input } from '@angular/core';
-import { SvgIconModule } from "../../../../../projects/svg-icon/src/lib/icon-module";
 import { SvgIcon } from "../../../../../projects/svg-icon/src/lib/icon";
 
 @Component({

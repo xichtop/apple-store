@@ -1,9 +1,13 @@
+/** Angular */
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './core/header/header.component';
+import { RouterModule } from '@angular/router';
+
+/** Utils */
 import { register } from 'swiper/element/bundle';
+
+/** Components */
+import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
-register();
 
 @Component({
   selector: 'app-root',
@@ -11,18 +15,15 @@ register();
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   imports: [
-    RouterModule, HeaderComponent, FooterComponent
+    FooterComponent,
+    HeaderComponent,
+    RouterModule,
   ],
 })
 export class AppComponent implements OnInit {
-  title = 'apple-store';
 
-  constructor(
-  ) {
-
-  }
-
-  ngOnInit() {
-
+  ngOnInit(): void {
+    register();
   }
 }
+

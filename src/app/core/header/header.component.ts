@@ -1,15 +1,25 @@
+/** Angular */
 import { Component, OnInit } from '@angular/core';
+
+/** Utils */
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
-import { SvgIcon } from '@libs/svg-icon';
+
+/** Constants */
 import { CATEGORIES } from '@shared/constants/categories';
+
+/** Components */
+import { SvgIcon } from '@libs/svg-icon';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   templateUrl: './header.component.html',
   imports: [
-    TranslocoPipe, SvgIcon, FormsModule, ReactiveFormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    SvgIcon,
+    TranslocoPipe,
   ],
   host: { class: 'flex justify-center w-full' }
 })
