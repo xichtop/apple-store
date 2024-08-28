@@ -19,61 +19,17 @@
       class="flex items-center w-screen gap-4 overflow-x-scroll hide-scrollbar"
       id="promotionSwiper"
     >
-      <app-promotion
-        [promotion]="'Ưu đãi trong thời gian có hạn'"
-        [title]="'Nhận thêm Airpods khi mua Mac và Apple Pencil khi mua iPad.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-offer-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717526810649'"
-      >
-      </app-promotion>
-      <app-promotion
-        [isEdu]="true"
-        [promotion]="'NHẬN THÊM AIRPODS'"
-        [title]="'MacBook Air'"
-        [description]="'Từ 22.499.000đ với chính sách trợ giá cho giáo dục'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-macbook-air-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1717542579551'"
-      >
-      </app-promotion>
-      <app-promotion
-        [isEdu]="true"
-        [promotion]="'NHẬN THÊM APPLE PENCIL'"
-        [title]="'Ipad Air'"
-        [description]="'Từ 15.599.000đ với chính sách trợ giá cho giáo dục'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'"
-      >
-      </app-promotion>
-      <app-promotion
-        [isEdu]="true"
-        [promotion]="'NHẬN THÊM AIRPODS'"
-        [title]="'MacBook Pro'"
-        [description]="'Từ 37.499.000đ với chính sách trợ giá cho giáo dục'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-macbook-pro-202406?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584936'"
-      >
-      </app-promotion>
-      <app-promotion
-        [isEdu]="true"
-        [promotion]="'NHẬN THÊM APPLE PENCIL'"
-        [title]="'Ipad Pro'"
-        [description]="'Từ 26.099.000đ với chính sách trợ giá cho giáo dục'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-pro-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584802'"
-      >
-      </app-promotion>
-      <app-promotion
-        [isEdu]="true"
-        [promotion]="'NHẬN THÊM AIRPODS'"
-        [title]="'iMac'"
-        [description]="'Từ 35.599.000đ'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-imac-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1717542584914'"
-      >
-      </app-promotion>
-      <app-promotion
-        class="pr-56"
-        [isEdu]="true"
-        [promotion]="'NHẬN THÊM AIRPODS'"
-        [title]="'Mac mini'"
-        [description]="'Từ 12.499.000đ'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-mac-mini-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1716334554593'"
-      >
-      </app-promotion>
+      @for (promotion of promotions; track $index; let last = $last) {
+        <app-promotion
+          [ngClass]="{'pr-56': last}"
+          [isEdu]="promotion.isEdu || false"
+          [promotion]="promotion.promotion || ''"
+          [title]="promotion.title"
+          [description]="promotion.description || ''"
+          [imgURL]="promotion.imgURL"
+        >
+        </app-promotion>
+      }
     </div>
   </app-custom-swiper>
 
@@ -135,59 +91,18 @@
         [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-accessories-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717435776952'"
       >
       </app-promotion>
-      <app-small-product
-        [isEdu]="true"
-        [promotion]="'Mới'"
-        [title]="'Apple Pencil Pro'"
-        [description]="'3.199.000đ với chính sách trợ giá cho giáo dục.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX2D3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713841707336'"
-      >
-      </app-small-product>
-      <app-small-product
-        [isEdu]="true"
-        [promotion]="'Mới'"
-        [title]="'Magic Keyboard cho iPad Pro 13 inch (M4) - Tiếng Anh Mỹ'"
-        [description]="'9.199.000đ với chính sách trợ giá cho giáo dục.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MWR53?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713934300288'"
-        [colors]="['gray', 'black']"
-      >
-      </app-small-product>
-      <app-small-product
-        [isEdu]="true"
-        [promotion]="'Mới'"
-        [title]="'Magic Keyboard Folio cho iPad (Thế hệ thứ 10) - Tiếng Anh Mỹ'"
-        [description]="'3.199.000đ với chính sách trợ giá cho giáo dục.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQDP3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1664481446939'"
-      >
-      </app-small-product>
-      <app-small-product
-        [isEdu]="true"
-        [title]="'Apple Pencil (USB-C)'"
-        [description]="'1.899.000đ với chính sách trợ giá cho giáo dục.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MX2D3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1713841707336'"
-      >
-      </app-small-product>
-      <app-small-product
-        [promotion]="'Khắc Miễn Phí'"
-        [title]="'Airpods Pro (Thế hệ thứ 2) với Hộp Sạc Magsage (USB-C)'"
-        [description]="'6.199.000đ.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MTJV3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1694014871985'"
-      >
-      </app-small-product>
-      <app-small-product
-        [title]="'Cáp Sạc USB-C 240W (2 m)'"
-        [description]="'819.000đ.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MU2G3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1693236163178'"
-      >
-      </app-small-product>
-      <app-small-product
-        class="pr-56"
-        [title]="'Beats Studio Buds + Tai nghe không dây đích thực khử tiếng ồn'"
-        [description]="'3.999.000đ.'"
-        [imgURL]="'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQLK3?wid=400&hei=400&fmt=jpeg&qlt=90&.v=1682361480894'"
-        [colors]="['gray', 'black']"
-      >
-      </app-small-product>
+
+      @for (promotion of studentPromotions; track $index; let last = $last) {
+        <app-small-product
+          [ngClass]="{'pr-56': last}"
+          [isEdu]="promotion.isEdu || false"
+          [promotion]="promotion.promotion || ''"
+          [title]="promotion.title"
+          [description]="promotion.description || ''"
+          [imgURL]="promotion.imgURL"
+        >
+        </app-small-product>
+      }
     </div>
   </app-custom-swiper>
 

@@ -1,25 +1,29 @@
 /** Angular */
-import { CommonModule } from "@angular/common";
-import { Component, CUSTOM_ELEMENTS_SCHEMA, signal } from "@angular/core";
+import { CommonModule } from '@angular/common';
+import { Component, signal } from '@angular/core';
 
-/** Utils */
-import { TranslocoPipe } from "@jsverse/transloco";
+/** Utils & Constants */
+import { TranslocoPipe } from '@jsverse/transloco';
+import { PROMOTIONS, STUDENT_PROMOTIONS } from '@shared/constants/promotions';
+
+/** Models */
+import { PromotionModel } from '@shared/models/promotion.model';
 
 /** Components */
-import { SvgIcon } from "@libs/svg-icon";
-import { AdvertiseComponent } from "@shared/components/advertise/advertise.component";
-import { CategoriesComponent } from "../../shared/components/categories/categories.component";
-import { BannerComponent } from "@shared/components/banner/banner.component";
-import { PromotionComponent } from "@shared/components/promotion/promotion.component";
-import { CustomSwiperComponent } from "@shared/components/custom-swiper/custom-swiper.component";
-import { SmallProductComponent } from "@shared/components/small-product/small-product.component";
-import { BigPromotionComponent } from "@shared/components/big-promotion/big-promotion.component";
+import { AdvertiseComponent } from '@shared/components/advertise/advertise.component';
+import { BannerComponent } from '@shared/components/banner/banner.component';
+import { BigPromotionComponent } from '@shared/components/big-promotion/big-promotion.component';
+import { CategoriesComponent } from '../../shared/components/categories/categories.component';
+import { CustomSwiperComponent } from '@shared/components/custom-swiper/custom-swiper.component';
+import { PromotionComponent } from '@shared/components/promotion/promotion.component';
+import { SmallProductComponent } from '@shared/components/small-product/small-product.component';
+import { SvgIcon } from '@libs/svg-icon';
 
 @Component({
   standalone: true,
-  selector: "app-store",
-  templateUrl: "./store.component.html",
-  styleUrls: ["./store.component.scss"],
+  selector: 'app-store',
+  templateUrl: './store.component.html',
+  styleUrls: ['./store.component.scss'],
   imports: [
     AdvertiseComponent,
     BannerComponent,
@@ -31,14 +35,12 @@ import { BigPromotionComponent } from "@shared/components/big-promotion/big-prom
     SmallProductComponent,
     SvgIcon,
     TranslocoPipe,
-    CommonModule
-  ],
-  host: { class: "w-full" },
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
   ],
 })
 export class StoreComponent {
+
+  promotions: PromotionModel[] = PROMOTIONS;
+  studentPromotions: PromotionModel[] = STUDENT_PROMOTIONS;
 
   scrollX = signal(0);
 
