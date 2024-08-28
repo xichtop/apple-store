@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { TranslocoPipe } from "@jsverse/transloco";
 import { SvgIcon } from "@libs/svg-icon";
 
 @Component({
@@ -6,7 +7,7 @@ import { SvgIcon } from "@libs/svg-icon";
   selector: "app-advertise",
   templateUrl: "./advertise.component.html",
   imports: [
-    SvgIcon
+    SvgIcon, TranslocoPipe
   ]
 })
 export class AdvertiseComponent { }

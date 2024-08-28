@@ -10,6 +10,7 @@ import { CATEGORIES } from '@shared/constants/categories';
 
 /** Components */
 import { SvgIcon } from '@libs/svg-icon';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -31,7 +32,9 @@ export class HeaderComponent implements OnInit {
   themeControl = new FormControl(true);
 
   constructor(
-    private _translocoService: TranslocoService
+    private _translocoService: TranslocoService,
+    private _router: Router,
+    private _route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -50,6 +53,10 @@ export class HeaderComponent implements OnInit {
 
   changeLanguage(lang: string) {
     this._translocoService.setActiveLang(lang);
+  }
+
+  goTo(path: string) {
+    this._router.navigate([path], { relativeTo: this._route });
   }
 
 }

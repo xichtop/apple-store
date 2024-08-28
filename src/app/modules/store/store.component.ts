@@ -2,6 +2,9 @@
 import { CommonModule } from "@angular/common";
 import { Component, CUSTOM_ELEMENTS_SCHEMA, signal } from "@angular/core";
 
+/** Utils */
+import { TranslocoPipe } from "@jsverse/transloco";
+
 /** Components */
 import { SvgIcon } from "@libs/svg-icon";
 import { AdvertiseComponent } from "@shared/components/advertise/advertise.component";
@@ -27,6 +30,8 @@ import { BigPromotionComponent } from "@shared/components/big-promotion/big-prom
     PromotionComponent,
     SmallProductComponent,
     SvgIcon,
+    TranslocoPipe,
+    CommonModule
   ],
   host: { class: "w-full" },
   schemas: [

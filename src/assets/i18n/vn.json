@@ -19,5 +19,27 @@
   "banner": {
     "title": "Mua Mac hoặc iPad với chính sách trợ giá cho giáo dục. Từ nay tới 30/9, nhận thêm AirPods khi mua Mac và Apple Pencil khi mua iPad.",
     "button": "Tìm hiểu thêm"
+  },
+  "advertise": {
+    "store": "Cửa Hàng Giáo Dục.",
+    "support": "Những phương tiện hỗ trợ học tập tuyệt vời nhất.",
+    "help": "Bạn cần trợ giúp mua sắm?",
+    "expert": "Hỏi chuyên gia"
+  },
+  "store": {
+    "title": {
+      "tool": "Công cụ tiên tiến cho những môn học nâng cao. ",
+      "products": "Chọn dòng sản phẩm hàng đầu.",
+      "credit": "Tận dụng hết điểm tín dụng của bạn. ",
+      "promotion": "Cộng thêm những cả ưu đãi độc quyền cho ngành giáo dục.",
+      "accessories": "Phụ kiện thiết yếu. ",
+      "combination": "Kết hợp hoàn hảo với các thiết bị yêu thích của bạn.",
+      "ipad": "Tìm iPad mới. ",
+      "start": "Chưa thể quyết? Bắt đầu từ đây nhé.",
+      "save": "Nhiều cách để tiết kiệm. ",
+      "findCombination": "Tìm cách phù hợp với bạn.",
+      "experience": "Một trải nghiệm rất iPad. ",
+      "design": "Được thiết kế để kết nối với mọi thứ của Apple."
+    }
   }
 }

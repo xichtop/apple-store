@@ -5,11 +5,14 @@
 
   <app-categories class="w-full px-28"></app-categories>
 
-  <div class="relative flex items-start w-full px-28">
-    <div class="w-3/5">
-      <p class="text-2xl font-bold">Công cụ tiên tiến cho những môn học nâng cao. <span class="text-2xl font-bold text-hint">Chọn dòng sản phẩm hàng đầu.</span></p>
-    </div>
-  </div>
+  <ng-container
+    [ngTemplateOutlet]="titleTpl"
+    [ngTemplateOutletContext]="{
+      main: 'store.title.tool',
+      second: 'store.title.products'
+    }"
+  >
+  </ng-container>
 
   <app-custom-swiper [swiperID]="'promotionSwiper'">
     <div
@@ -74,11 +77,14 @@
     </div>
   </app-custom-swiper>
 
-  <div class="flex items-start w-full mt-6 px-28">
-    <div class="w-3/5">
-      <p class="text-2xl font-bold">Tận dụng hết điểm tín dụng của bạn. <span class="text-2xl font-bold text-hint">Cộng thêm những cả ưu đãi độc quyền cho ngành giáo dục.</span></p>
-    </div>
-  </div>
+  <ng-container
+    [ngTemplateOutlet]="titleTpl"
+    [ngTemplateOutletContext]="{
+      main: 'store.title.credit',
+      second: 'store.title.promotion'
+    }"
+  >
+  </ng-container>
 
   <div class="grid w-full h-full grid-cols-3 gap-8 mt-6 px-28">
     <div class="relative flex items-center justify-between w-full col-span-1 cursor-pointer rounded-3xl shadow-card hover:scale-[1.02] hover:shadow-xl transition-all">
@@ -109,11 +115,14 @@
     </div>
   </div>
 
-  <div class="flex items-start w-full mt-6 px-28">
-    <div class="w-3/5">
-      <p class="text-2xl font-bold">Phụ kiện thiết yếu. <span class="text-2xl font-bold text-hint">Kết hợp hoàn hảo với các thiết bị yêu thích của bạn.</span></p>
-    </div>
-  </div>
+  <ng-container
+    [ngTemplateOutlet]="titleTpl"
+    [ngTemplateOutletContext]="{
+      main: 'store.title.accessories',
+      second: 'store.title.combination'
+    }"
+  >
+  </ng-container>
 
   <app-custom-swiper [swiperID]="'studentPromotion'">
     <div
@@ -182,11 +191,14 @@
     </div>
   </app-custom-swiper>
 
-  <div class="flex items-start w-full mt-6 px-28">
-    <div class="w-3/5">
-      <p class="text-2xl font-bold">Tìm iPad mới. <span class="text-2xl font-bold text-hint">Chưa thể quyết? Bắt đầu từ đây nhé.</span></p>
-    </div>
-  </div>
+  <ng-container
+    [ngTemplateOutlet]="titleTpl"
+    [ngTemplateOutletContext]="{
+      main: 'store.title.ipad',
+      second: 'store.title.start'
+    }"
+  >
+  </ng-container>
 
   <app-custom-swiper [swiperID]="'iPadPromotion'">
     <div
@@ -215,11 +227,14 @@
     </div>
   </app-custom-swiper>
 
-  <div class="flex items-start w-full mt-6 px-28">
-    <div class="w-3/5">
-      <p class="text-2xl font-bold">Nhiều cách để tiết kiệm. <span class="text-2xl font-bold text-hint">Tìm cách phù hợp với bạn.</span></p>
-    </div>
-  </div>
+  <ng-container
+    [ngTemplateOutlet]="titleTpl"
+    [ngTemplateOutletContext]="{
+      main: 'store.title.save',
+      second: 'store.title.findCombination'
+    }"
+  >
+  </ng-container>
 
   <app-custom-swiper [swiperID]="'tradeInPromotion'">
     <div
@@ -235,11 +250,14 @@
     </div>
   </app-custom-swiper>
 
-  <div class="flex items-start w-full mt-6 px-28">
-    <div class="w-3/5">
-      <p class="text-2xl font-bold">Một trải nghiệm rất iPad. <span class="text-2xl font-bold text-hint">Được thiết kế để kết nối với mọi thứ của Apple.</span></p>
-    </div>
-  </div>
+  <ng-container
+    [ngTemplateOutlet]="titleTpl"
+    [ngTemplateOutletContext]="{
+      main: 'store.title.experience',
+      second: 'store.title.design'
+    }"
+  >
+  </ng-container>
 
   <app-custom-swiper [swiperID]="'servicePromotion'">
     <div
@@ -274,3 +292,14 @@
   </app-custom-swiper>
 
 </div>
+
+<ng-template #titleTpl let-main="main" let-second="second">
+  <div class="flex items-start w-full mt-6 px-28">
+    <div class="w-3/5">
+      <p class="text-2xl font-bold">
+        {{main | transloco}}
+        <span class="text-2xl font-bold text-hint">{{second | transloco}}</span>
+      </p>
+    </div>
+  </div>
+</ng-template>

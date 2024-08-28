@@ -18,5 +18,27 @@
   "banner": {
     "title": "Buy a Mac or iPad with education discounts. Now through September 30, get AirPods with any Mac purchase and Apple Pencil with any iPad purchase.",
     "button": "Find more"
+  },
+  "advertise": {
+    "store": "Education Store.",
+    "support": "The best learning aids.",
+    "help": "Need help shopping?",
+    "expert": "Ask the expert"
+  },
+  "store": {
+    "title": {
+      "tool": "Advanced tools for advanced subjects.",
+      "products": "Select top product lines.",
+      "credit": "Make the most of your credit score.",
+      "promotion": "Plus exclusive offers for education.",
+      "accessories": "Essential accessories.",
+      "combination": "Perfectly blends with your favorite devices.",
+      "ipad": "Find new iPad.",
+      "start": "Can't decide? Start here.",
+      "save": "Many ways to save.",
+      "findCombination": "Find what works for you.",
+      "experience": "A very iPad experience.",
+      "design": "Designed to connect with everything Apple."
+    }
   }
 }
