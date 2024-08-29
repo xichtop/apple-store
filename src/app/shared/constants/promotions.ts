@@ -2,50 +2,50 @@ import { PromotionModel } from "@shared/models/promotion.model";
 
 export const PROMOTIONS: PromotionModel[] = [
   {
-    promotion: 'Ưu đãi trong thời gian có hạn',
-    title: 'Nhận thêm Airpods khi mua Mac và Apple Pencil khi mua iPad.',
+    promotion: 'promotion.expired',
+    title: 'title.macAndPencil',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-offer-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717526810649'
   },
   {
     isEdu: true,
-    promotion: 'NHẬN THÊM AIRPODS',
-    title: 'MacBook Air',
-    description: 'Từ 22.499.000đ với chính sách trợ giá cho giáo dục',
+    promotion: 'promotion.airpods',
+    title: 'title.macBookAir',
+    description: '22.499.000đ',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-macbook-air-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1717542579551'
   },
   {
     isEdu: true,
-    promotion: 'NHẬN THÊM APPLE PENCIL',
-    title: 'Ipad Air',
-    description: 'Từ 15.599.000đ với chính sách trợ giá cho giáo dục',
+    promotion: 'promotion.pencil',
+    title: 'title.ipadAir',
+    description: '15.599.000đ',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-air-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584851'
   },
   {
     isEdu: true,
-    promotion: 'NHẬN THÊM AIRPODS',
-    title: 'MacBook Pro',
-    description: 'Từ 37.499.000đ với chính sách trợ giá cho giáo dục',
+    promotion: 'promotion.airpods',
+    title: 'title.macbookPro',
+    description: '37.499.000đ',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-macbook-pro-202406?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584936'
   },
   {
     isEdu: true,
-    promotion: 'NHẬN THÊM APPLE PENCIL',
-    title: 'Ipad Pro',
-    description: 'Từ 26.099.000đ với chính sách trợ giá cho giáo dục',
+    promotion: 'promotion.pencil',
+    title: 'title.ipadPro',
+    description: '26.099.000đ',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-ipad-pro-202406_GEO_VN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1717542584802'
   },
   {
     isEdu: true,
-    promotion: 'NHẬN THÊM AIRPODS',
-    title: 'iMac',
-    description: 'Từ 35.599.000đ',
+    promotion: 'promotion.airpods',
+    title: 'title.imac',
+    description: '35.599.000đ',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-imac-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1717542584914'
   },
   {
     isEdu: true,
-    promotion: 'NHẬN THÊM AIRPODS',
-    title: 'Mac mini',
-    description: 'Từ 12.499.000đ',
+    promotion: 'promotion.airpods',
+    title: 'title.macMini',
+    description: '12.499.000đ',
     imgURL: 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-bts-mac-mini-202406?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1716334554593'
   }
 ];

@@ -39,6 +39,23 @@
       "findCombination": "Find what works for you.",
       "experience": "A very iPad experience.",
       "design": "Designed to connect with everything Apple."
+    },
+    "promotion": {
+      "title": {
+        "macAndPencil": "Get Airpods with your Mac and Apple Pencil with your iPad purchase.",
+        "macBookAir": "MacBook Air",
+        "ipadAir": "iPad Air",
+        "macbookPro": "Macbook Pro",
+        "ipadPro": "iPad Pro",
+        "imac": "iMac",
+        "macMini": "Mac Mini"
+      },
+      "promotion": {
+        "expired": "Limited Time Offer",
+        "airpods": "GET MORE AIRPODS",
+        "pencil": "GET MORE APPLE PENCIL",
+        "eduPrice": "From {{price}} with education subsidy policy"
+      }
     }
   }
 }

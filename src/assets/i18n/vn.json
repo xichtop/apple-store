@@ -40,6 +40,23 @@
       "findCombination": "Tìm cách phù hợp với bạn.",
       "experience": "Một trải nghiệm rất iPad. ",
       "design": "Được thiết kế để kết nối với mọi thứ của Apple."
+    },
+    "promotion": {
+      "title": {
+        "macAndPencil": "Nhận thêm Airpods khi mua Mac và Apple Pencil khi mua iPad.",
+        "macBookAir": "MacBook Air",
+        "ipadAir": "iPad Air",
+        "macbookPro": "Macbook Pro",
+        "ipadPro": "iPad Pro",
+        "imac": "iMac",
+        "macMini": "Mac Mini"
+      },
+      "promotion": {
+        "expired": "Ưu đãi trong thời gian có hạn",
+        "airpods": "NHẬN THÊM AIRPODS",
+        "pencil": "NHẬN THÊM APPLE PENCIL",
+        "eduPrice": "Từ {{price}} với chính sách trợ giá cho giáo dục"
+      }
     }
   }
 }
